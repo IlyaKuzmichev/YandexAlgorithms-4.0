@@ -14,7 +14,6 @@
 #include <unordered_set>
 #include <vector>
 
-
 int32_t gcd(int32_t up, int32_t down) {
   if (down == 0) {
     return up;

@@ -29,7 +29,8 @@ int main() {
     bool ans = false;
     while (l <= r && !ans) {
       if (seq[l] != seq[l - 1]) {
-        std::cout << std::max(seq[l], seq[l - 1]) << std::endl;;
+        std::cout << std::max(seq[l], seq[l - 1]) << std::endl;
+        ;
         ans = true;
       } else {
         ++l;
