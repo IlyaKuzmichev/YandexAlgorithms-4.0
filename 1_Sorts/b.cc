@@ -42,7 +42,7 @@ void quicksort(std::vector<int32_t>& vect, uint32_t i, uint32_t j) {
   if (i >= j) {
     return;
   }
-  int32_t predicat = vect[(i + j) / 2];
+  int32_t predicat = vect[i + (rand() % (j - i))];
   std::pair<uint32_t, uint32_t> p = partition(predicat, vect, i, j);
   quicksort(vect, i, p.first);
   quicksort(vect, p.second, j);
